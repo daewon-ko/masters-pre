@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cocoa/cocoa.iml" filepath="$PROJECT_DIR$/cocoa/cocoa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/d_221107/d_221107.iml" filepath="$PROJECT_DIR$/d_221107/d_221107.iml" />
+      <module fileurl="file://$PROJECT_DIR$/d_221108/d_221108.iml" filepath="$PROJECT_DIR$/d_221108/d_221108.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/masters-pre.iml" filepath="$PROJECT_DIR$/.idea/masters-pre.iml" />
+    </modules>
+  </component>
+</project>
