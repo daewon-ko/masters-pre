@@ -1,8 +1,8 @@
 package week3.d_221114.Mission1_2;
 
-public class KenyaAmericano extends Coffee{
-    String bean = "KenyaAmericano";
-    KenyaAmericano(){
+public class HawaiiAmericano extends Coffee {
+    String bean = "HawaiiAmericano";
+    HawaiiAmericano(){
     }
 
     @Override
