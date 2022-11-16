@@ -1,4 +1,6 @@
-package week2.d_221110.mission2_3;
+package week2.d_221110.mission2_3_RefactoringByMyself.mission2_3;
+
+import java.util.HashMap;
 
 public class Memento {
     // 나는 왜 Memento를 싱글턴으로 구현하려고 했지?
@@ -8,7 +10,7 @@ public class Memento {
     // Getter가 접근하지 못하면, createMememento 메서드를 Gamer클래스에서 이용 시,
     // 변수 값을 Memmento 값에 저장을 해줄 수가 없음.
     private int money;
-    private  StringBuilder haveFruit= new StringBuilder();
+    private HashMap<String, Integer> fruits;
     private static Memento instance = new Memento();
 
     private Memento() { }
@@ -23,15 +25,15 @@ public class Memento {
         this.money = money;
     }
 
-    public void setHaveFruit(StringBuilder haveFruit) {
-        this.haveFruit = haveFruit;
+    public void setHaveFruit(HashMap<String, Integer> fruits) {
+        this.fruits = fruits;
     }
 
     public int getMoney() {
         return money;
     }
 
-    public StringBuilder getHaveFruit() {
-        return haveFruit;
+    public HashMap getHaveFruit() {
+        return fruits;
     }
 }
