@@ -14,11 +14,6 @@ public class Student {
     }
 
 
-
-//    public void setMajor(String major) {
-//        this.major = major;
-//    }
-
     Student(String name, int studentID) {
         this.name = name;
         this.studentID = studentID;
