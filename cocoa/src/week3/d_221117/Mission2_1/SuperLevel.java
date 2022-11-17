@@ -1,4 +1,4 @@
-package week3.d_221117.Mission2_1.gamelevel;
+package week3.d_221117.Mission2_1;
 
 public class SuperLevel extends PlayerLevel{
 
