@@ -12,20 +12,24 @@ public class MemberShipManagementMap {
     public MemberShipManagementMap() {
         this.hashMap = new HashMap<>();
     }
-    public void addMemberShip(int id, String name, Grade grade){
-        this.hashMap.put(id,new Member(id,name,grade));
+
+    public void addMemberShip(int id, String name, Grade grade) {
+        this.hashMap.put(id, new Member(id, name, grade));
     }
-    public boolean removeMember(int ID){
-        if(hashMap.containsKey(ID)){
+
+    public boolean removeMember(int ID) {
+        if (hashMap.containsKey(ID)) {
             hashMap.remove(ID);
             return true;
         }
         System.out.println("해당하는 회원이 없습니다.");
         return false;
     }
-    public void showAllMember(){
+
+    public void showAllMember() {
+        System.out.println("=============================");
         Iterator<Integer> ir = hashMap.keySet().iterator();
-        while (ir.hasNext()){
+        while (ir.hasNext()) {
             int key = ir.next();
             Member member = hashMap.get(key);
             System.out.println(member);

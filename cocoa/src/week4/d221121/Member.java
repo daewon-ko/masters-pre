@@ -2,7 +2,7 @@ package week4.d221121;
 
 import java.util.Objects;
 
-public class Member {
+public class Member implements Comparable<Member> {
     private String name;
     private int memberID;
     private Grade grade;
@@ -45,5 +45,14 @@ public class Member {
     @Override
     public int hashCode() {
         return memberID;
+    }
+
+    @Override
+//    public int compareTo(Member member) {
+//        return (this.memberID - member.memberID);
+//    }
+
+    public int compareTo(Member member) {
+        return this.name.compareTo(member.name);
     }
 }
