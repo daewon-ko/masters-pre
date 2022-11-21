@@ -35,6 +35,7 @@ public class Report {
         System.out.println();
         sb.append("이름\t\t학번\t\t중점과목\t\t점수\n");
         System.out.println("--------------------------");
+
         sb.append(Kang.getName() + "\t" + Kang.getStudentID() + "\t" + Major.국어국문학과.getEssentialSub() + "\t\t"
                 + Kang.subjectList.get(0).getScore() + ":" + haveMajor.getGrade(Kang.subjectList.get(0).getScore()) + "\n");
         sb.append(Kim.getName() + "\t" + Kim.getStudentID() + "\t" + Major.컴퓨터공학과.getEssentialSub() + "\t\t"
